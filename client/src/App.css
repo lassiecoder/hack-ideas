@@ -1,7 +1,7 @@
   /* NAVBAR ====================== */
 
 .nav-wrapper a {
-  color: rgb(68 68 68);
+  color: #000000;
 }
 .brand-logo, #nav-mobile {
   margin: 0 6vw;
@@ -10,7 +10,7 @@
   font-weight: 500;
 }
 .nav-wrapper span {
-  color: #26a69a;
+  color: #f59a3d;
   font-weight: 500;
 }
 
@@ -207,3 +207,9 @@
   font-size: 1.1vw;
   color: #6d6d75;
 }
+
+
+
+
+
+/* 3px 6px 24px rgba(0,0,0,0.1) */
