@@ -7,4 +7,4 @@ The application have these features;
 - Users can add a new challenges/job posting,
 - Challenge have a title, description and tags.
 
-![hack-ideas_fCARqiRI](https://user-images.githubusercontent.com/17312616/164221714-0858cfa3-2534-456d-9077-e8f4c956c08f.gif)
+https://user-images.githubusercontent.com/17312616/164229951-aa67229b-c00f-49f3-9c6f-56ddfaea7738.mov
