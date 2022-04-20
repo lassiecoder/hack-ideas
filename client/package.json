@@ -7,11 +7,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "dateformat": "^5.0.3",
     "materialize-css": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.3.1",
+    "react-modal": "^3.14.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
+    "react-select": "^5.2.2",
     "react-sparklines": "^1.7.0"
   },
   "scripts": {

@@ -1,42 +1,54 @@
-  /* NAVBAR ====================== */
+/* NAVBAR ====================== */
 
 .nav-wrapper a {
   color: #000000;
 }
-.brand-logo, #nav-mobile {
+.brand-logo,
+#nav-mobile {
   margin: 0 6vw;
 }
 #nav-mobile li {
   font-weight: 500;
 }
 .nav-wrapper span {
-  color: #f59a3d;
+  color: #26a69a;
   font-weight: 500;
 }
+.username {
+  color: #000000;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
 
-  /* SIGNIN AND SIGNUP ====================== */
+/* SIGNIN AND SIGNUP ====================== */
 
-.signInCard, .signUpCard {
+.signInCard,
+.signUpCard {
   width: 40%;
   margin: auto;
   margin-top: 8vw;
 }
-.signInCard .card, .signUpCard .card {
+.signInCard .card,
+.signUpCard .card {
   text-align: center;
 }
-.signInCard .card h1, .signUpCard .card h1 {
+.signInCard .card h1,
+.signUpCard .card h1 {
   color: #26a69a;
   font-size: 2.8vw;
   font-weight: 600;
   /* text-align: center; */
 }
-.signInCard .card h1:hover, .signUpCard .card h1:hover {
+.signInCard .card h1:hover,
+.signUpCard .card h1:hover {
   color: #26a699bb;
 }
-.signInCard .card, .signUpCard .card {
+.signInCard .card,
+.signUpCard .card {
   padding: 0.1vw 3vw 3vw 3vw;
 }
-.signInCard .btn, .signUpCard .btn {
+.signInCard .btn,
+.signUpCard .btn {
   margin: 2vw 0 0 0;
   /* align-items: center; */
 }
@@ -45,71 +57,37 @@
   margin-top: 2vw;
 }
 
-  /* ERROR MESSAGES ================= */
+/* ERROR MESSAGES ================= */
 /* #toast-container {
 
    
 } */
 
-  /* LOGOUT BUTTON ====================== */
+/* LOGOUT BUTTON ====================== */
 /* .logOutBtn {
   color: red
 } */
 
-  /* HOME ====================== */
-
-.homeWrapper {
-  margin: 5vw 0;
-}
-
-.homeWrapper .card {
-  width: 70vw;
-  margin: 1.5vw auto;
-  padding: 0 3vw 1vw 3vw;
-}
-.homeWrapper .card-image {
-  width: 6%;
-  margin: auto;
-  
-}
-.card.horizontal .card-image img {
-  width: -webkit-fill-available;
-}
-.homeWrapper .boxWrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.homeWrapper .card-stacked h3 {
-  font-size: 1.7vw;
-  font-weight: 500;
-}
-.homeWrapper .boxWrapper h4 {
-  font-size: 1.1vw;
-  font-weight: 500;
-}
-.homeWrapper .boxWrapper .dataHead, .homeWrapper .boxWrapper .dataDetails {
+/* HOME ====================== */
+.createChallenge {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 2vh 5vw;
+  width: fit-content;
+  font-weight: 600;
   display: flex;
-  justify-content: space-around;
-} 
-.homeWrapper .card-content {
-  padding: 0;
+  padding: 8px 12px;
+  border: #000000;
+  border-radius: 10px;
+  color: #26a69a;
+  /* background-color: rgb(216, 216, 216); */
 }
-.homeWrapper .card-stacked {
-  padding-left: 4vw;
-}
-.homeWrapper .card-action .linktoNext {
-  right: 0;
-  bottom: 2vw;
-  position: absolute;
-}
-.homeWrapper .linktoNext b {
-  color: #26a69a !important;
-}
-.homeWrapper .linktoNext b:hover {
-  color: #26a699a4 !important;
+.createChallenge:hover {
+  color: rgb(5, 110, 100);
+  /* background-color: rgb(110, 110, 110); */
 }
 
-  /* PROFILE ===================== */
+/* PROFILE ===================== */
 
 .profileWrapper {
   margin: 4vw 0;
@@ -183,7 +161,8 @@
 .profileWrapper .policyDetails p::first-letter {
   font-size: 2vw;
 }
-.profileWrapper .fundDetails, .profileWrapper .prosCons {
+.profileWrapper .fundDetails,
+.profileWrapper .prosCons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3vw;
@@ -192,11 +171,13 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-.fundDetails .collection-item, .prosCons .collection-item {
+.fundDetails .collection-item,
+.prosCons .collection-item {
   font-weight: 500;
   font-size: 1.1vw;
 }
-.fundDetails .collection li div:not(:first-child), .prosCons .collection li span {
+.fundDetails .collection li div:not(:first-child),
+.prosCons .collection li span {
   font-weight: 500;
   color: #6d6d75;
   font-size: 1vw;
@@ -208,8 +189,11 @@
   color: #6d6d75;
 }
 
+/* CHALLENGES ===================== */
 
-
-
+.dropdown {
+  /* height: 20px; */
+  border-color: white;
+}
 
 /* 3px 6px 24px rgba(0,0,0,0.1) */
