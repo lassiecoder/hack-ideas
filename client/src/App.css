@@ -37,7 +37,6 @@
   color: #26a69a;
   font-size: 2.8vw;
   font-weight: 600;
-  /* text-align: center; */
 }
 .signInCard .card h1:hover,
 .signUpCard .card h1:hover {
@@ -50,41 +49,26 @@
 .signInCard .btn,
 .signUpCard .btn {
   margin: 2vw 0 0 0;
-  /* align-items: center; */
 }
 .alreadyHaveAnAccount {
   font-weight: 600;
   margin-top: 2vw;
 }
 
-/* ERROR MESSAGES ================= */
-/* #toast-container {
-
-   
-} */
-
-/* LOGOUT BUTTON ====================== */
-/* .logOutBtn {
-  color: red
-} */
-
 /* HOME ====================== */
 .createChallenge {
-  /* border: 1px solid red; */
-  text-align: center;
   margin: 2vh 5vw;
-  width: fit-content;
-  font-weight: 600;
   display: flex;
+  color: #26a69a;
   padding: 8px 12px;
   border: #000000;
+  width: fit-content;
+  font-weight: 600;
+  text-align: center;
   border-radius: 10px;
-  color: #26a69a;
-  /* background-color: rgb(216, 216, 216); */
 }
 .createChallenge:hover {
   color: rgb(5, 110, 100);
-  /* background-color: rgb(110, 110, 110); */
 }
 
 /* PROFILE ===================== */
@@ -107,10 +91,10 @@
   align-items: center;
 }
 .policyName .name img {
-  border-radius: 50%;
+  margin: auto;
   width: 4.5vw;
   padding: 0.5vw;
-  margin: auto;
+  border-radius: 50%;
   box-shadow: 0 0 6px #00000085;
 }
 .policyName .name h2 {
@@ -121,12 +105,12 @@
 }
 .heading .policyFeed span {
   margin: 0 1vw;
-  align-items: center;
-  background-color: white;
   color: #6d6d75;
   font-weight: 500;
-  border: 1px solid #a8a8a8;
   box-shadow: none;
+  align-items: center;
+  border: 1px solid #a8a8a8;
+  background-color: white;
 }
 .heading .policyFeed #star {
   border: none !important;
@@ -136,8 +120,8 @@
   color: rgb(255, 186, 27);
 }
 .heading .percentReturn h2 {
-  font-weight: 700;
   font-size: 2vw;
+  font-weight: 700;
 }
 .heading .oneYearReturn h6 {
   color: #6d6d75;
@@ -153,10 +137,10 @@
   margin: auto;
 }
 .profileWrapper .policyDetails p {
-  padding: 0.5vw 2vw;
   line-height: 2vw;
   font-size: 1.1vw;
   color: #6d6d75;
+  padding: 0.5vw 2vw;
 }
 .profileWrapper .policyDetails p::first-letter {
   font-size: 2vw;
@@ -164,8 +148,8 @@
 .profileWrapper .fundDetails,
 .profileWrapper .prosCons {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 3vw;
+  grid-template-columns: repeat(2, 1fr);
 }
 .profileWrapper .fundDetails .collection-item {
   display: grid;
@@ -178,12 +162,11 @@
 }
 .fundDetails .collection li div:not(:first-child),
 .prosCons .collection li span {
+  font-size: 1vw;
   font-weight: 500;
   color: #6d6d75;
-  font-size: 1vw;
 }
 .aboutPolicy p {
-  /* padding: 0.5vw 2vw; */
   line-height: 2vw;
   font-size: 1.1vw;
   color: #6d6d75;
@@ -192,8 +175,86 @@
 /* CHALLENGES ===================== */
 
 .dropdown {
-  /* height: 20px; */
   border-color: white;
 }
 
-/* 3px 6px 24px rgba(0,0,0,0.1) */
+.challengeContainer {
+  width: 30%;
+  margin: 100px auto;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.challengeBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+/* CHALLENGE DETAILS ===================== */
+
+.mainContainer {
+  width: 60%;
+  margin: 100px auto;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.createdDate {
+  font-size: 12px;
+  color: #26a69a;
+}
+
+.recmdFor {
+  font-size: 22px;
+  font-weight: 700;
+  color: #26a69a;
+}
+
+.challengeTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #a7a7a7;
+  margin-top: 1%;
+}
+
+.challengeDesc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a7a7a7;
+  margin-top: 4%;
+}
+
+/* HOME ===================== */
+
+.mainCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 2% 2% 0% 0%;
+  padding: 2% 1%;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 10%) 3px 6px 24px;
+}
+
+.cardRecommend {
+  font-size: 22px;
+  font-weight: 700;
+  color: #26a69a;
+}
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #a7a7a7;
+}

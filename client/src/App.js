@@ -4,7 +4,6 @@ import './App.css';
 import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
 import Home from './component/screens/Home';
 import Signin from './component/screens/Signin';
-import Profile from './component/screens/Profile';
 import Signup from './component/screens/Signup';
 import Challenges from './component/screens/Challenges';
 import { reducer, initialState } from './reducer/userReducer';
@@ -32,9 +31,6 @@ const Routing = () => {
       </Route>
       <Route path="/signup">
         <Signup />
-      </Route>
-      <Route path="/profile">
-        <Profile />
       </Route>
       <Route path="/create-challenge">
         <Challenges />

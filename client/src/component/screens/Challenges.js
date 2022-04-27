@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Materialize from 'materialize-css';
 
@@ -6,10 +6,6 @@ import Select from 'react-select';
 
 import dateFormat from 'dateformat';
 const now = new Date();
-
-// Basic usage
-
-// Saturday, June 9th, 2007, 5:46:21 PM
 
 const options = [
   { value: 'frontend_developer', label: 'Frontend Developer' },
@@ -42,11 +38,7 @@ const Challenges = () => {
   const [description, setDescription] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
 
-  console.log({ selectedOption: selectedOption?.value }, '---selectedOption');
-
-  // const todayDate = new Date().toISOString().slice(0, 10);
   const formattedDate = dateFormat(now, 'dddd, mmmm dS, yyyy');
-  console.log(formattedDate, '----------  datee');
 
   const handleCreateChallenge = () => {
     console.log({
@@ -88,25 +80,9 @@ const Challenges = () => {
 
   return (
     <div>
-      <div
-        style={{
-          width: '30%',
-          margin: '100px auto',
-          padding: '40px 60px',
-          boxShadow: '3px 6px 24px rgba(0,0,0,0.1)',
-          borderRadius: '10px'
-        }}
-      >
+      <div className="challengeContainer">
         <div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: '20px'
-            }}
-          >
+          <div className="challengeBox">
             <div style={{ fontWeight: 600 }}>Recommended for: </div>
 
             <div style={{ width: '60%' }}>
@@ -120,7 +96,6 @@ const Challenges = () => {
                   DropdownIndicator: () => null,
                   IndicatorSeparator: () => null
                 }}
-                // styles={{}}
               />
             </div>
           </div>
@@ -156,13 +131,10 @@ const Challenges = () => {
           </form>
         </div>
 
-        {/* <button onClick={() => handleCreateChallenge()}>create</button> */}
         <div style={{ textAlign: 'center', margin: '30px 0 0 0' }}>
-          {/* <button style={{padding:"10px 16px", border: 0}}>CREATE</button> */}
           <a
             class="waves-effect waves-light btn"
             onClick={() => handleCreateChallenge()}
-            // style={{ zIndex: -1 }}
           >
             CREATE
           </a>
