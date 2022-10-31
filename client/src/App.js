@@ -1,7 +1,13 @@
 import React, { useEffect, createContext, useReducer, useContext } from 'react';
 import Navbar from './component/Navbar';
 import './App.css';
-import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  useHistory,
+  Redirect
+} from 'react-router-dom';
 import Home from './component/screens/Home';
 import Signin from './component/screens/Signin';
 import Signup from './component/screens/Signup';
@@ -17,8 +23,9 @@ const Routing = () => {
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
     dispatch({ type: 'USER', payload: user });
-    if (user) history.push('/');
-    else history.push('/signin');
+    // if (user) history.push('/');
+    // else history.push('/signin');
+    !user && history.push('/signin');
   }, [dispatch, history]);
 
   return (
@@ -37,6 +44,9 @@ const Routing = () => {
       </Route>
       <Route path="/challenge-details">
         <ChallengeDetails />
+      </Route>
+      <Route path="*">
+        <Home />
       </Route>
     </Switch>
   );

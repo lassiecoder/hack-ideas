@@ -1,18 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# hack-ideas
 
-## Available Scripts
+## This project is the combination of -
 
-In the project directory, you can run:
+- React JS
+- Node JS
+- MongoDB
+- Mongoose
+- Express JS
+- MongoDB atlas
 
-### `yarn start`
+### In frontend -
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Materialize CSS
+- Vanilla CSS
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Firstly you've to run the server by getting into the path of
 
-### `yarn test`
+```
+hack-ideas/server
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+and then
+
+```
+nodemon app
+```
+
+once the server starts, get into client path;
+
+```
+hack-ideas/client
+```
+
+and run the below cmd, the app will start at http://localhost:3000/
+
+```
+yarn start
+```

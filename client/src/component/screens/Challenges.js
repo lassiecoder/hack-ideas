@@ -144,3 +144,5 @@ const Challenges = () => {
   );
 };
 export default Challenges;
+
+// navigation.navigate("SCREEN_NAME", {ID: "INDEX"})

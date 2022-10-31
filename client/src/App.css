@@ -258,3 +258,10 @@
   font-weight: 600;
   color: #a7a7a7;
 }
+
+@media only screen and (max-width: 768px) {
+  .challengeContainer {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}
